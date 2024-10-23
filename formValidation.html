@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Vaidation</title>
+</head>
+<body>
+    <form action="index.html">
+        First name : 
+        <input type="text" name="fname" pattern="[A-Z]{2,5}">
+        <!-- disabled -->
+        <!-- readonly -->
+        <!-- required -->
+         <!-- minlength="2" maxlength="10" -->
+        <br><br>
+        Last Name : 
+        <input type="text" name="lname">
+        <br><br>
+        Number : <input type="tel" name="phoneNumber" pattern="[6789][0-9]{9}">
+        <br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
+
+
+<!-- 
+
+
+pattern : 
+
+1) [A-Z]  : any single char 
+   [a-z]  
+   [0-9]
+   
+   
+
+   A-Z 
+   65-90
+
+   a-z
+   97-122
+
+   A-z
+   65-122
+
+2) [A-Z]+   :  one or More 
+    [a-z]+
+
+
+3) 
+    [A-Z]{2,}
+
+
+
+    Mobile Number : 
+    6123456789
+    7987654321
+    8123456789
+    9
+
+
+4)  
+    1234-234-456
+
+    -->
