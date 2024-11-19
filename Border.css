@@ -1,0 +1,51 @@
+h1{
+    background-color: cyan;
+            /* extra */
+    width: fit-content;
+    margin: 150px auto;
+    padding: 10px;
+
+
+    /*  */
+    /* 
+    1)border width
+    2)border style
+    3)border color
+     */
+    /* border : collection of Multiple Properties */
+    /* border: 5px solid blue; */
+
+        /* default */
+    /* border-style: none;
+    border-width: 0px;
+    border-color: black; */
+
+    
+    /* border-style: solid; */
+    /* border-style: dashed; */
+    /* border-style: dotted; */
+    /* border-style: double; */
+
+    /* border-style: inset; */
+    /* border-style: outset; */
+    /* border-style: groove; */
+                /* 1.top/bottom  2.left/right */
+    /* border-style: solid double; */
+    /* border-style: solid dashed double none; */
+
+/* ----------------------------- */
+                /* All side */
+    /* border-width: 10px; */
+                /* 1.top/bottom  2.left/right */
+    /* border-width: 10px 10px; */
+                    /*top right bottom left  */
+    /* border-width: 10px 30px 40px 100px; */
+
+/* --------------------------------- */
+                /* All side */
+    /* border-color: black; */
+                /* 1.top/bottom  2.left/right */
+    /* border-color: red blue; */
+                   /*top right   bottom   left  */
+    /* border-color: red blue yellow lime; */
+}
