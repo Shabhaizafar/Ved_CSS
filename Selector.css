@@ -1,0 +1,47 @@
+/* Universal  Selector*/
+*{
+    color: red;
+}
+
+/* Element  Selector/Tag Selector / Type Selector */
+h1{
+    color: blue;
+}
+h2{
+    color: purple;
+}
+p{
+    color: darkgoldenrod;
+}
+
+
+
+/* Class  Selector*/
+.heading1{
+    color: lime;
+}
+
+
+/* Id  Selector*/
+#id1{
+    color: yellow;
+}
+
+
+
+
+/* h1{
+    color: red;
+}
+h2{
+    color: blue;
+} */
+
+
+
+
+/* 
+Priority : 
+
+Id Selector > Class Selector > Element Selector > Universal Selector
+*/
