@@ -1,0 +1,56 @@
+/* div{
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    margin: 150px auto; */
+
+
+    /* translate */
+                        /* X */
+    /* transform: translate(50px); */
+                        /* X    Y */
+    /* transform: translate(50px,100px); */
+
+
+    /* transform: translateX(50px); */
+    /* transform: translateX(-50px); */
+    /* transform: translateX(0%); */
+
+    /* transform: translateY(50px); */
+    /* transform: translateY(-50px); */
+    /* transform: translateY(50%); */
+
+    /* ------------------------------------------- */
+    /* scale : numeric */
+                    /* X,Y */
+    /* transform: scale(1.5); */
+                    /* X  Y */
+    /* transform: scale(1.5,2); */
+
+
+            /* width : 200 *1  =400px*/
+    /* transform: scaleX(2); */
+    /* transform: scaleX(0.4);  */
+    /* transform: scaleX(-1);  */
+
+                    /* height : 200 */
+    /* transform: scaleY(2); */
+    /* transform: scaleY(0.4); */
+    /* transform: scaleY(-2); */
+
+
+
+/* } */
+
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform: translate();
+}
+.box2{
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    transform: translateX();
+}
