@@ -1,0 +1,25 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    margin: 150px auto;
+    transition: all 1s;
+
+}
+div:hover{
+    
+    /* rotate  */
+    /* transform: rotate(30deg); */
+    /* transform: rotateX(180deg); */
+    /* transform: rotateY(180deg); */
+
+
+    /* skew */
+                    /* X */
+    /* transform: skew(30deg); */
+    /* transform: skew(90deg,90deg); */
+
+    /* transform: skewX(30deg); */
+    /* transform: skewY(30deg); */
+}
+
