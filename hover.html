@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        div{
+            background-color: black;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        section{
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-family: calibri;
+            padding: 10px 20px;
+        }
+        .b1{
+            background-color: red;
+        }
+        .b2{
+            background-color: lime;
+        }
+        .b3{
+            background-color: blue;
+        }
+        .b4{
+            background-color: yellow;
+        }
+        .b5{
+            background-color: cadetblue;
+        }
+        .extra{
+            height: 50vh;
+            width: 50%;
+            background-color: lightcoral;
+            position: absolute;
+            top: 25vh;
+            left: 25%;
+        }
+        .b1:hover  ~.extra{
+            background-color: red;
+        }
+        .b2:hover  ~.extra{
+            background-color: lime;
+        }
+        .b3:hover  ~.extra{
+            background-color: blue;
+        }
+        .b4:hover  ~.extra{
+            background-color: yellow;
+        }
+        .b5:hover  ~.extra{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <section class="b1">RED</section>
+        <section class="b2">LIME</section>
+        <section class="b3">BLUE</section>
+        <section class="b4">YELLOW</section>
+        <section class="b5">CADETBLUE</section>
+        <section class="extra"></section>
+    </div>
+</body>
+</html>
