@@ -14,6 +14,7 @@ li{
     display: inline-block;
     width: 110px;
     text-align: center;
+    position: relative;
 }
 a{
     display: block;
@@ -32,4 +33,37 @@ span{
 }
 a:hover span{
     transform: rotate(180deg);
+}
+ul li:hover .submenu{
+    display: block;
+}
+/* =----------------------- */
+/* <ol class="submenu">
+                    <li><a href="#">160 Days of DSA</a></li> 
+                    <li><a href="#">Problem of the Day</a></li> 
+                    <li><a href="#">Practice Coding Problems</a></li> 
+                    <li><a href="#">GfG SDE Sheet</a></li> 
+                </ol> */
+/* =---------------------- */
+.submenu{
+    display: none;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    top: 38px;
+    left: 0px;
+    border-top: 4px solid #2E8D47;
+}
+.submenu li{
+    display: block;
+    width: 100%;
+}
+.submenu li a{
+    color: black;
+    display: block;
+    padding: 15px 20px;
+    text-align: left;
+}
+.submenu li a:hover{
+    background-color: gainsboro;
 }
