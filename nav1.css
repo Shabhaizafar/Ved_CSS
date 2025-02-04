@@ -37,7 +37,8 @@ a:hover span{
 ul li:hover .submenu{
     display: block;
 }
-/* =----------------------- */
+/* ----------------------- */
+
 /* <ol class="submenu">
                     <li><a href="#">160 Days of DSA</a></li> 
                     <li><a href="#">Problem of the Day</a></li> 
