@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflect</title>
+    <style>
+        img{
+            display: block;
+            width: 250px;
+            margin:200px auto;
+        }
+        /* img:hover{ */
+            /* -webkit-box-reflect: left; */
+            /* -webkit-box-reflect: right; */
+            /* -webkit-box-reflect: below; */
+            /* -webkit-box-reflect: above; */
+        /* } */
+        div{
+            text-align: center;
+        }
+        button{
+            background-color: darkslategrey;
+            border: none;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 10px 30px;
+        }
+        button:hover{
+            background-color: rgb(38, 57, 57);
+        }
+        .above:hover ~img{
+            -webkit-box-reflect: above;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="above">Above</button>
+        <button>Below</button>
+        <button>Left</button>
+        <button>Right</button>
+        <img src="https://www.windowslatest.com/wp-content/uploads/2024/05/Bloom-wallpaper-OLED.jpg" alt="">
+        
+    </div>
+
+</body>
+</html>
