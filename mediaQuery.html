@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        @media screen and (min-width:1000px) {
+            div{
+            background-color: teal;
+            height: 100vh;
+            padding: 50px;
+        }
+        h1{
+            color: darkblue;
+            font-family: calibri;
+            text-align: center;
+            margin: 10px;
+        }
+        h2{
+            color: darkblue;
+            font-family: calibri;
+            text-align: center;
+            margin: 10px;
+        }
+        p{
+            color: darksalmon;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 10px;
+            text-align: justify;
+        }    
+        }
+        @media screen and (max-width:1000px) and (min-width:768px) {
+            div{
+            background-color: black;
+            height: 100vh;
+            padding: 50px;
+        }
+        h1{
+            color: lightgreen;
+            font-family: calibri;
+            text-align: center;
+            margin: 10px;
+        }
+        h2{
+            color: lightgreen;
+            font-family: calibri;
+            text-align: center;
+            margin: 10px;
+        }
+        p{
+            color: lightslategray;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 10px;
+            text-align: justify;
+        }    
+        }
+        @media screen and (max-width:768px) {
+            div{
+            background-color: black;
+            height: 100vh;
+            padding: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto 1fr;
+        }
+        h1{
+            color: lightgreen;
+            font-family: calibri;
+            text-align: center;
+            margin: 10px;
+            grid-column: 1;
+            grid-row: 1;
+        }
+        h2{
+            color: lightgreen;
+            font-family: calibri;
+            text-align: center;
+            margin: 10px;
+            grid-column: 2;
+            grid-row: 1;
+        }
+        p{
+            color: lightslategray;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 10px;
+            text-align: justify;
+        }    
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>HTML</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati atque fuga, deleniti perferendis facere a in blanditiis sapiente tempora enim quibusdam et distinctio culpa, magni harum quaerat? Impedit, et sunt!</p>
+        <h2>CSS</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti totam nostrum in. Ipsam vero amet placeat porro atque, adipisci eum eos officia consequuntur eligendi iure laudantium possimus ipsum nulla tempora magnam debitis, dignissimos delectus quo corporis laborum nemo excepturi repellat quas. Alias natus debitis blanditiis aliquid explicabo accusantium cum. Et itaque corrupti distinctio quae? Numquam ipsa voluptatibus voluptas harum sequi est possimus fugit, eius illum ducimus, soluta doloremque facilis. Quas nisi quasi incidunt! Sapiente, consequatur incidunt. Voluptas quod accusantium quam tempora dolor aperiam quidem consequuntur aut eum reiciendis cum dolorem consequatur qui aliquam, esse vel. Consequatur hic sapiente neque totam.</p>
+    </div>
+</body>
+</html>
