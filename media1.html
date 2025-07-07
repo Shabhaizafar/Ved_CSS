@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            background-color: rgb(32, 107, 107);
+            padding: 10px 6%;
+            display: flex;
+            justify-content: space-between;
+            font-family: calibri;
+            align-items: center;
+        }
+        .icon{
+            display: none;
+        }
+        h1{
+            font-size: 42px;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        @media screen and (max-width:500px) {
+           .menu{
+                display: none;
+           } 
+           .icon{
+            display: flex;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <section>
+            <h1>Logo</h1>
+        </section>
+        <section class="menu">
+            <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Reference</li>
+        </ul>
+        </section>
+        <section class="icon">
+            🔽
+        </section>
+    </div>
+</body>
+</html>
