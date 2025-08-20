@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            counter-reset: royal;
+        }
+        main::before{
+            counter-increment: royal;
+            content: 'content :'counter(royal)' ';
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <main>Inner Data 1</main>
+        <main>Inner Data 2</main>
+        <main>Inner Data 3</main>
+        <main>Inner Data 4</main>
+        <main>Inner Data 5</main>
+        <main>Inner Data 6</main>
+        <main>Inner Data 7</main>
+        <main>Inner Data 8</main>
+        <main>Inner Data 9</main>
+        <main>Inner Data 10</main>
+    </div>
+</body>
+</html>
