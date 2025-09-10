@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @property --my-color {
+            /* "<length"> */
+            syntax: "<color>";
+            /* inherits: true; */
+            inherits: false;
+
+            initial-value: blue;
+        }
+        body{
+            background-color: black;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            margin: 10px;
+            /* background-color: aqua; */
+            background-color: var(--my-color);
+        }
+        .child{
+            position: absolute;
+            left: 200px;
+            
+        }
+        main{
+            color: var(--my-color);
+            --my-color:blueviolet;
+        }        
+        .box1{
+            /* --my-color : lime; */
+            --my-color : yellow;
+        }
+        .box3{
+            --my-color : brown;
+        }
+    </style>
+</head>
+<body>
+    <main>CSSS</main>
+    <div class="box1">box1
+        <div class="child">
+            css
+        </div>
+    </div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+</body>
+</html>
