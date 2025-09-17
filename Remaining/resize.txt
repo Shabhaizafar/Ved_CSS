@@ -1,0 +1,13 @@
+Any Element  : 
+control Size horizontal and Vertical
+
+
+    resize : horizontal   (width)
+
+    resize : vertical (height)
+
+    resize : auto           (height+width)
+
+    resize  : none
+
+    
