@@ -1,5 +1,3 @@
 CSS Website Layout
-2D-Transform
-3D-Transform
 Animation
 MQExamples

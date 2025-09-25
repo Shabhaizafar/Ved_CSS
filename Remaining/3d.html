@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            margin: 150px auto;
+
+            perspective: 100px;
+        }
+
+        section {
+            color: white;
+            font-size: 24px;
+            font-family: calibri;
+            width: 100%;
+            height: 100%;
+            outline: 1px solid blue;
+            transform-style: preserve-3d;
+            transform: translateZ(-100px);
+            position: relative;
+            animation: spinCube 8s infinite ease-in-out;
+        }
+
+        main {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+
+        .box1 {
+            background-color: rgba(0, 139, 139, 0.5);
+            transform: translateZ(100px);
+        }
+
+        .box2 {
+            background-color: rgba(184, 135, 11, 0.5);
+            transform: translateZ(-100px);
+
+        }
+
+        .box3 {
+            background-color: rgba(139, 0, 139, 0.5);
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        .box4 {
+            background-color: rgba(139, 0, 0, 0.5);
+            transform: rotateX(90deg) translateZ(-100px);
+        }
+
+        .box5 {
+            background-color: rgba(47, 79, 79, 0.5);
+            transform: rotateY(90deg) translateZ(-100px);
+        }
+
+        .box6 {
+            background-color: rgba(233, 150, 122, 0.5);
+            transform: rotateY(90deg) translateZ(100px);
+        }
+
+        @keyframes spinCube {
+            0% {
+                transform: translateZ(-100px) rotateX(0deg) rotateY(0deg);
+            }
+
+            100% {
+                transform: translateZ(-100px) rotateX(360deg) rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <section>
+            <main class="box1">FRONT</main>
+            <main class="box2">BACK</main>
+            <main class="box3">TOP</main>
+            <main class="box4">BOTTOM</main>
+            <main class="box5">LEFT</main>
+            <main class="box6">RIGHT</main>
+        </section>
+    </div>
+</body>
+
+</html>
